@@ -1,50 +1,67 @@
-# Welcome to your Expo app 👋
+# Ocean of Movies
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A sleek React Native app built with Expo that showcases the latest and greatest movies using the TMDB API.  
+Features include categorized movie lists, detail views with elegant UI, and smooth navigation.
 
-## Get started
+---
 
-1. Install dependencies
+## Screens
 
-   ```bash
-   npm install
-   ```
+### Home Screen
+- Displays 4 horizontally scrollable sections:
+  - **Featured**
+  - **Top Rated**
+  - **Now Playing**
+  - **Upcoming**
+- Each card shows poster, rating, title, and release date.
+- "View All" buttons to see more in a grid layout.
 
-2. Start the app
+![Home Screen](./assets/screenshots/home.png)
 
-   ```bash
-    npx expo start
-   ```
+### List of Movies
+- Grid layout with 2 columns
+- Paginated TMDB data
+- Movies loaded based on selected category
+- Custom movie card for compact display
 
-In the output, you'll find options to open the app in a
+![List of Movies](./assets/screenshots/list.png)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Detail Screen
+- Large backdrop poster with gradient overlay
+- Title, genres, release date, rating
+- Overview description
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+![Detail Screen](./assets/screenshots/detail.png)
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## Features
 
-```bash
-npm run reset-project
-```
+- Expo with custom dev client
+- React Navigation with Expo Router
+- TanStack Query for API caching + pagination
+- TMDB API integration
+- Clean, dark UI
+- Fully typed with TypeScript
+- Environment variable support via `.env`
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🧠 Tech Stack
 
-To learn more about developing your project with Expo, look at the following resources:
+- React Native (Expo)
+- TypeScript
+- Expo Router
+- TanStack Query
+- Axios
+- TMDB API
+- dotenv
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## 🔐 Environment Setup
 
-Join our community of developers creating universal apps.
+Create a `.env` file in the root:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```env
+TMDB_API_KEY=your_tmdb_api_key_here
