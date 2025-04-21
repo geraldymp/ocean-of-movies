@@ -13,6 +13,7 @@ export default {
     newArchEnabled: true,
     ios: {
       supportsTablet: true,
+      bundleIdentifier: "com.germp24.oceanofmovies"
     },
     android: {
       adaptiveIcon: {
